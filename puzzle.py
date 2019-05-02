@@ -1,18 +1,14 @@
 l1 = list(input())
 P = 1
 while l1 != ['Z']:
-	l2 = input()
-	l3 = input()
-	l4 = input()
-	l5 = input()
+	l2,l3,l4,l5 = input(),input(),input(),input()
 	list1 = [ list(l1),list(l2),list(l3),list(l4),list(l5)]
 	list2 = list(input())
 	print("***# puzzle #",P)
 	for i in range(5):
 		for j in range(5):
-			if list1[i][j] == ' ':
-				f,s = i,j
-	for ch in range(len(list2)):
+			f,s = i,j if list1[i][j] == ' '
+			for ch in range(len(list2)):
 		if list2[ch] == 'A':
 			if f == 0:
 				print("no final configuration")
