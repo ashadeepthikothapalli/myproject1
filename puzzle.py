@@ -2,8 +2,7 @@ l1 = list(input())
 P = 1
 while l1 != ['Z']:
 	l2,l3,l4,l5 = input(),input(),input(),input()
-	list1 = [ list(l1),list(l2),list(l3),list(l4),list(l5)]
-	list2 = list(input())
+	list1,list2 = [ list(l1),list(l2),list(l3),list(l4),list(l5)], list(input())
 	print("***# puzzle #",P)
 	for i in range(5):
 		for j in range(5):
