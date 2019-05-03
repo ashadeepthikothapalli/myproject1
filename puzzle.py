@@ -43,14 +43,3 @@ while l1 != ['Z']:
 			break
 	l1 = list(input())
 	P += 1
-
-
-
-
-
-
-
-
-
-
-
